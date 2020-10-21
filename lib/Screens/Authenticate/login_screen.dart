@@ -219,7 +219,8 @@ Widget background(BuildContext context) {
 //Function to connect mongodb api and retrieve and check data
 login(email,password) async {
   var url="http://192.168.16.105:3000/login"; //192.168.***.***  should be changed when pc ip got change to IPv4 address
-  final http.Response response= await http.post(url,
+  var client = http.Client();
+  var response= await client.post(url,
     headers: <String ,String >{
       'Content-Type': 'application/json; charset=UTF-8',},
     body: jsonEncode(<String, String>{
