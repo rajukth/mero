@@ -169,7 +169,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             textColor: Colors.white,
                               pressOn:()async {
                                     if (_form.currentState.validate()) {
-                                      signup(email, password);
+                                      await signup(email, password);
                                       SharedPreferences prefs= await SharedPreferences.getInstance();
                                       String token = prefs.getString("token");
                                       if(token !=null){
@@ -242,7 +242,7 @@ Widget background(BuildContext context) {
 
 signup(email,password) async {
 
-  var url="http://192.168.43.252:3000/signup"; //192.168.***.***  should be changed when pc ip got change to IPv4 address
+  var url="http://192.168.16.105:3000/signup"; //192.168.***.***  should be changed when pc ip got change to IPv4 address
   final http.Response response= await http.post(url,
     headers: <String ,String >{
       'Content-Type': 'application/json; charset=UTF-8',},

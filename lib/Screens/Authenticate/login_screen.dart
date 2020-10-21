@@ -77,7 +77,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             return 'Email field cannot be empty';
                           }
                           if(!RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+").hasMatch(val)){
-                            return 'Enter valid email';
+                            return 'Invalid email';
                           }
 
 
@@ -133,7 +133,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       textColor: Colors.white,
                       pressOn:() async {
                         if (_loginForm.currentState.validate()) {
-                    login(email, password);
+                    await login(email, password);
                     SharedPreferences prefs= await SharedPreferences.getInstance();
                     String token = prefs.getString("token");
                     String msg = prefs.getString("msg");
@@ -218,7 +218,7 @@ Widget background(BuildContext context) {
 
 //Function to connect mongodb api and retrieve and check data
 login(email,password) async {
-  var url="http://192.168.43.252:3000/login"; //192.168.***.***  should be changed when pc ip got change to IPv4 address
+  var url="http://192.168.16.105:3000/login"; //192.168.***.***  should be changed when pc ip got change to IPv4 address
   final http.Response response= await http.post(url,
     headers: <String ,String >{
       'Content-Type': 'application/json; charset=UTF-8',},
