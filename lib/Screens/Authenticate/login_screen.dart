@@ -35,6 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    Size size2 = MediaQuery.of(context).size;
 
     return Scaffold(
       appBar: AppBar(
