@@ -35,7 +35,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    //commit can be done now 
 
     return Scaffold(
       appBar: AppBar(
