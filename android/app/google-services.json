@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "433768046113",
+    "firebase_url": "https://mero-79b06.firebaseio.com",
+    "project_id": "mero-79b06",
+    "storage_bucket": "mero-79b06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433768046113:android:e2e80e2587356caf970d60",
+        "android_client_info": {
+          "package_name": "mchat.android.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433768046113-noa5u2h5jmn475voj9k0grnaiipcu1hc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3NBUx0cjr6bIIa370P2uAPvWr6vqvxR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433768046113-noa5u2h5jmn475voj9k0grnaiipcu1hc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

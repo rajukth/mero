@@ -1,0 +1,33 @@
+POST
+http://localhost:3000/signup
+@Content-Type: application/json
+{
+"email": " Dilli@ram.com",
+"password": "987654321"
+}
+
+
+
+%%%
+# Duration: 130 ms
+# POST
+# http://localhost:3000/signup
+# Headers
+# @Content-Type: application/json
+# Body
+# {
+# "email": " Dilli@ram.com",
+# "password": "987654321"
+# }
+
+
+# status 200
+
+@X-Powered-By: Express
+@Content-Type: application/json; charset=utf-8
+@Content-Length: 38
+@ETag: W/"26-crdJKUKJpi5h71CLy6pBm+o7akY"
+@Date: Tue, 20 Oct 2020 03:33:05 GMT
+@Connection: keep-alive
+
+{"token":"token from rest client api"}
